@@ -1,5 +1,6 @@
 
 class Question
+  attr_accessor :question, :answer
 
   def initialize
     @question = ""
@@ -15,6 +16,7 @@ class Question
 
 end
 
-question = Question.new
-question.generate_question
-p question
+# question = Question.new
+# question.generate_question
+# puts question.question
+# puts question.answer
