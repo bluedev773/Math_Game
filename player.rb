@@ -1,22 +1,18 @@
 
 class Player
-  attr_accessor :score
+  attr_accessor :score, :name
 
-  def initialize
+  def initialize(player_name)
     @score = 3
+    @name = player_name
+  end
+
+  def get_score
+    @score
   end
 
   def score_decrement
     @score -= 1
   end
 
-  def score_increment
-    @score += 1
-  end
-
 end
-
-# player = Player.new
-# puts player.score
-# puts player.score_decrement
-# puts player.score_increment

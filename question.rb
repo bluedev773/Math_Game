@@ -20,15 +20,14 @@ class Question
   end
 
   def check_answer
-    @response == answer ? (puts 'correct answer') : (puts 'incorrect answer')
+    if(@response == answer) 
+      puts "correct answer"
+      true
+    else
+      puts "incorrect answer"
+      false
+    end
   end
-
-  
 
 end
 
-# question = Question.new
-# question.generate_question
-# puts question.question
-# puts question.answer
-# question.check_answer(13)
